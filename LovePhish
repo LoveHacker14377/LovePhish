@@ -11,19 +11,24 @@ RESET='\033[0m'
 export VERSION=2.4
 
 banner() {
-    echo -e "${CYAN} _____                                                     _____ "
-    echo -e "( ___ )                                                   ( ___ )"
-    echo -e " |   |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|   | "
-    echo -e " |   |  ______     _             _____  _     _     _      |   | "
-    echo -e " |   | |  ____|   | |           |  __ \\| |   (_)   | |     |   | "
-    echo -e " |   | | |__   ___| |__   ___   | |__) | |__  _ ___| |__   |   | "
-    echo -e " |   | |  __| / __| '_ \\ / _ \\  |  ___/| '_ \\| / __| '_ \\  |   | "
-    echo -e " |   | | |___| (__| | | | (_) | | |    | | | | \\__ \\ | | | |   | "
-    echo -e " |   | |______\\___|_| |_|\\___/  |_|    |_| |_|_|___/_| |_| |   | "
-    echo -e " |___|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|___| "
-    echo -e "(_____)                                                   (_____)${RESET}${YELLOW}"
-    echo -e "           https://t.me/AzerbaijanTermux        V ${VERSION}\n"
-    echo -e "${RED}    "
+    echo -e "${RED}        ******       ******        ${RESET}"
+    echo -e "${RED}     ***********   ***********     ${RESET}"
+    echo -e "${RED}   *************   *************   ${RESET}"
+    echo -e "${RED}  ******************************** ${RESET}"
+    echo -e "${RED}  ******************************** ${RESET}"
+    echo -e "${RED}   *********  LOVE PHISH  ******** ${RESET}"
+    echo -e "${RED}     ***************************   ${RESET}"
+    echo -e "${RED}       ***********************     ${RESET}"
+    echo -e "${RED}         *******************       ${RESET}"
+    echo -e "${RED}           ***************         ${RESET}"
+    echo -e "${RED}             ***********           ${RESET}"
+    echo -e "${RED}               *******             ${RESET}"
+    echo -e "${RED}                 ***               ${RESET}"
+    echo -e "${RED}                  *                ${RESET}\n"
+    
+    echo -e "${YELLOW}      https://www.instagram.com/_love__hacker__143_/ ${RESET}"
+    echo -e "${CYAN}               Created by Ghansham Raut ${RESET}"
+    echo -e "${GREEN}                        V ${VERSION}${RESET}\n"
 }
 
 cleanup() {
@@ -76,9 +81,7 @@ clean_background_process(){
     if [[ -n "$VIRTUAL_ENV" ]]; then
         deactivate
     fi
-
 }
-
 
 check_update() {
     git fetch origin
@@ -153,7 +156,6 @@ cloudflared_install() {
         echo -e "${BLUE} [ + ] Installation directory: ${BOLD}/usr/local/bin/cloudflared${RESET}"
     fi
 }
-
 
 check_dependencies() {
     if ! cloudflared --version 2>/dev/null | grep -q '2025.1.0'; then
@@ -243,7 +245,6 @@ short_url() {
         echo "$long_url"  
     fi
 }
-
 
 select_methode () {
     clear
